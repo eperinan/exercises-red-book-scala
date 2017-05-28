@@ -1,26 +1,31 @@
 .DS_Store
-target
+
 *.class
-build
-.classpath
-.project
-.settings
+*.log
 
-### SBT ###
-# Simple Build Tool
-# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
-
+# sbt specific
+.cache
+.history
+.lib/
 dist/*
-target/
+target
 lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
-.history
-.cache
-.lib/
-.idea/
 
-### Scala ###
-*.class
-*.log
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# ENSIME specific
+.ensime_cache/
+.ensime
+
+# IDEA Specific
+.idea/
+*.iws
+/out/
+.idea_modules/
+
+.DS_Store
